@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context="activities.HomeActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <ImageView
+        android:id="@+id/MedicineNameButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SaltsButton"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp"
+        android:clickable="true"
+        android:contentDescription="@string/MedcineDescription"
+        android:onClick="byMedicineName"
+        android:src="@drawable/med" />
+
+    <ImageView
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/SaltsButton"
+        android:layout_below="@+id/SaltsButton"
+        android:onClick="Entry"
+        android:src="@drawable/btn"
+        android:text="Enter Medicine" />
+
+    <ImageView
+        android:id="@+id/SaltsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:clickable="true"
+        android:contentDescription="@string/SaltsDescription"
+        android:onClick="bySalts"
+        android:src="@drawable/salts" />
+
+    
+
+</RelativeLayout>
+

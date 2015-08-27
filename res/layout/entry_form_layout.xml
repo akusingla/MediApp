@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/txtStandardPack"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Medicine Entry"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/txtSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/mtxtSecondary"
+        android:layout_alignParentLeft="true"
+        android:text="Secondary Salts" 
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etPack"
+        android:layout_alignBottom="@+id/etPack"
+        android:layout_alignParentLeft="true"
+        android:text="Standard PAck" />
+
+    <TextView
+        android:id="@+id/Type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etType"
+        android:layout_alignBottom="@+id/etType"
+        android:layout_alignParentLeft="true"
+        android:text="Type" />
+
+    <TextView
+        android:id="@+id/txtUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etPack"
+        android:layout_alignRight="@+id/Type"
+        android:layout_marginBottom="17dp"
+        android:text="Unit" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etName"
+        android:layout_alignLeft="@+id/txtUnit"
+        android:layout_marginBottom="20dp"
+        android:text="Price" />
+
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtPrice"
+        android:layout_alignBottom="@+id/txtPrice"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="price" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/txtmedName"
+        android:ems="10"
+        android:hint="name" />
+
+    <TextView
+        android:id="@+id/txtPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/mtxtPrimary"
+        android:layout_alignBottom="@+id/mtxtPrimary"
+        android:layout_alignParentLeft="true"
+        android:text="Primary" />
+
+    <TextView
+        android:id="@+id/txtmedName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etType"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="18dp"
+        android:text="Medicine Name" />
+
+    <EditText
+        android:id="@+id/etUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/txtUnit"
+        android:layout_alignBottom="@+id/txtUnit"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="unit" />
+
+    <EditText
+        android:id="@+id/mtxtSecondary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etBrand"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:ems="10"
+        android:hint="sec salts by ," />
+
+    <EditText
+        android:id="@+id/mtxtPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mtxtSecondary"
+        android:layout_toRightOf="@+id/txtmedName"
+        android:ems="10"
+        android:hint="@string/mtxtPrimary" />
+
+    <EditText
+        android:id="@+id/etBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mtxtPrimary"
+        android:layout_toRightOf="@+id/txtSecondary"
+        android:ems="10"
+        android:hint="brand" />
+
+    <EditText
+        android:id="@+id/etPack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:ems="10"
+        android:hint="pack" />
+
+    <TextView
+        android:id="@+id/txtBrandName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/etBrand"
+        android:layout_alignBottom="@+id/etBrand"
+        android:layout_alignLeft="@+id/txtUnit"
+        android:text="Brand Name" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etPack"
+        android:layout_below="@+id/txtSecondary"
+        android:text="add" 
+        android:onClick="add"/>
+
+    <EditText
+        android:id="@+id/etType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/etUnit"
+        android:layout_alignParentRight="true"
+        android:ems="10"
+        android:hint="type" />
+
+</RelativeLayout>
